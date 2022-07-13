@@ -1,8 +1,8 @@
-import type { NextPage } from "next";
 import axios from "axios";
 import { Video } from "../types";
 import VideoCard from "../components/VideoCard";
 import NoResults from "../components/NoResults";
+
 import { BASE_URL } from "../utils";
 
 interface IProps {
@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const Home = ({ videos }: IProps) => {
-  console.log(videos);
+
   return (
     <div className="flex flex-col gap-10 videos h-full">
       {videos.length ? (
